@@ -1,0 +1,557 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RMO Plomberie</title>
+    <script type="module" crossorigin="" src="/assets/app-hG6qXE0d.js"></script>
+    <link rel="stylesheet" crossorigin="" href="/assets/app-IiDBkstH.css">
+  <style id="vuetify-theme-stylesheet">:root {
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 36,36,77;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 56,84,166;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 18,61,139;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-accent: 217,107,67;
+      --v-theme-accent-overlay-multiplier: 1;
+      --v-theme-greyblue: 123,146,166;
+      --v-theme-greyblue-overlay-multiplier: 1;
+      --v-theme-secondary-lighten-1: 86,108,194;
+      --v-theme-secondary-lighten-1-overlay-multiplier: 2;
+      --v-theme-secondary-lighten-2: 114,133,222;
+      --v-theme-secondary-lighten-2-overlay-multiplier: 1;
+      --v-theme-secondary-lighten-3: 143,159,251;
+      --v-theme-secondary-lighten-3-overlay-multiplier: 1;
+      --v-theme-accent-lighten-1: 248,133,91;
+      --v-theme-accent-lighten-1-overlay-multiplier: 1;
+      --v-theme-accent-lighten-2: 255,160,117;
+      --v-theme-accent-lighten-2-overlay-multiplier: 1;
+      --v-theme-accent-lighten-3: 255,188,143;
+      --v-theme-accent-lighten-3-overlay-multiplier: 1;
+      --v-theme-accent-darken-1: 186,81,43;
+      --v-theme-accent-darken-1-overlay-multiplier: 2;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-theme-on-accent: 255,255,255;
+      --v-theme-on-greyblue: 255,255,255;
+      --v-theme-on-secondary-lighten-1: 255,255,255;
+      --v-theme-on-secondary-lighten-2: 255,255,255;
+      --v-theme-on-secondary-lighten-3: 255,255,255;
+      --v-theme-on-accent-lighten-1: 255,255,255;
+      --v-theme-on-accent-lighten-2: 0,0,0;
+      --v-theme-on-accent-lighten-3: 0,0,0;
+      --v-theme-on-accent-darken-1: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--light {
+      color-scheme: normal;
+      --v-theme-background: 255,255,255;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 255,255,255;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 255,255,255;
+      --v-theme-surface-bright-overlay-multiplier: 1;
+      --v-theme-surface-light: 238,238,238;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 66,66,66;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 238,238,238;
+      --v-theme-primary: 36,36,77;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 31,85,146;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 56,84,166;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 18,61,139;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 176,0,32;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 1;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 1;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 1;
+      --v-theme-accent: 217,107,67;
+      --v-theme-accent-overlay-multiplier: 1;
+      --v-theme-greyblue: 123,146,166;
+      --v-theme-greyblue-overlay-multiplier: 1;
+      --v-theme-secondary-lighten-1: 86,108,194;
+      --v-theme-secondary-lighten-1-overlay-multiplier: 2;
+      --v-theme-secondary-lighten-2: 114,133,222;
+      --v-theme-secondary-lighten-2-overlay-multiplier: 1;
+      --v-theme-secondary-lighten-3: 143,159,251;
+      --v-theme-secondary-lighten-3-overlay-multiplier: 1;
+      --v-theme-accent-lighten-1: 248,133,91;
+      --v-theme-accent-lighten-1-overlay-multiplier: 1;
+      --v-theme-accent-lighten-2: 255,160,117;
+      --v-theme-accent-lighten-2-overlay-multiplier: 1;
+      --v-theme-accent-lighten-3: 255,188,143;
+      --v-theme-accent-lighten-3-overlay-multiplier: 1;
+      --v-theme-accent-darken-1: 186,81,43;
+      --v-theme-accent-darken-1-overlay-multiplier: 2;
+      --v-theme-on-background: 0,0,0;
+      --v-theme-on-surface: 0,0,0;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 0,0,0;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-theme-on-accent: 255,255,255;
+      --v-theme-on-greyblue: 255,255,255;
+      --v-theme-on-secondary-lighten-1: 255,255,255;
+      --v-theme-on-secondary-lighten-2: 255,255,255;
+      --v-theme-on-secondary-lighten-3: 255,255,255;
+      --v-theme-on-accent-lighten-1: 255,255,255;
+      --v-theme-on-accent-lighten-2: 0,0,0;
+      --v-theme-on-accent-lighten-3: 0,0,0;
+      --v-theme-on-accent-darken-1: 255,255,255;
+      --v-border-color: 0, 0, 0;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 0.87;
+      --v-medium-emphasis-opacity: 0.6;
+      --v-disabled-opacity: 0.38;
+      --v-idle-opacity: 0.04;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.12;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 245, 245, 245;
+      --v-theme-on-code: 0, 0, 0;
+    }
+    .v-theme--dark {
+      color-scheme: dark;
+      --v-theme-background: 18,18,18;
+      --v-theme-background-overlay-multiplier: 1;
+      --v-theme-surface: 33,33,33;
+      --v-theme-surface-overlay-multiplier: 1;
+      --v-theme-surface-bright: 204,191,214;
+      --v-theme-surface-bright-overlay-multiplier: 2;
+      --v-theme-surface-light: 66,66,66;
+      --v-theme-surface-light-overlay-multiplier: 1;
+      --v-theme-surface-variant: 163,163,163;
+      --v-theme-surface-variant-overlay-multiplier: 2;
+      --v-theme-on-surface-variant: 66,66,66;
+      --v-theme-primary: 33,150,243;
+      --v-theme-primary-overlay-multiplier: 2;
+      --v-theme-primary-darken-1: 39,124,193;
+      --v-theme-primary-darken-1-overlay-multiplier: 2;
+      --v-theme-secondary: 84,182,178;
+      --v-theme-secondary-overlay-multiplier: 2;
+      --v-theme-secondary-darken-1: 53,155,151;
+      --v-theme-secondary-darken-1-overlay-multiplier: 2;
+      --v-theme-error: 207,102,121;
+      --v-theme-error-overlay-multiplier: 2;
+      --v-theme-info: 33,150,243;
+      --v-theme-info-overlay-multiplier: 2;
+      --v-theme-success: 76,175,80;
+      --v-theme-success-overlay-multiplier: 2;
+      --v-theme-warning: 251,140,0;
+      --v-theme-warning-overlay-multiplier: 2;
+      --v-theme-secondary-lighten-1: 113,210,205;
+      --v-theme-secondary-lighten-1-overlay-multiplier: 2;
+      --v-theme-secondary-lighten-2: 142,238,234;
+      --v-theme-secondary-lighten-2-overlay-multiplier: 2;
+      --v-theme-secondary-lighten-3: 170,255,255;
+      --v-theme-secondary-lighten-3-overlay-multiplier: 2;
+      --v-theme-on-background: 255,255,255;
+      --v-theme-on-surface: 255,255,255;
+      --v-theme-on-surface-bright: 0,0,0;
+      --v-theme-on-surface-light: 255,255,255;
+      --v-theme-on-primary: 255,255,255;
+      --v-theme-on-primary-darken-1: 255,255,255;
+      --v-theme-on-secondary: 255,255,255;
+      --v-theme-on-secondary-darken-1: 255,255,255;
+      --v-theme-on-error: 255,255,255;
+      --v-theme-on-info: 255,255,255;
+      --v-theme-on-success: 255,255,255;
+      --v-theme-on-warning: 255,255,255;
+      --v-theme-on-secondary-lighten-1: 0,0,0;
+      --v-theme-on-secondary-lighten-2: 0,0,0;
+      --v-theme-on-secondary-lighten-3: 0,0,0;
+      --v-border-color: 255, 255, 255;
+      --v-border-opacity: 0.12;
+      --v-high-emphasis-opacity: 1;
+      --v-medium-emphasis-opacity: 0.7;
+      --v-disabled-opacity: 0.5;
+      --v-idle-opacity: 0.1;
+      --v-hover-opacity: 0.04;
+      --v-focus-opacity: 0.12;
+      --v-selected-opacity: 0.08;
+      --v-activated-opacity: 0.12;
+      --v-pressed-opacity: 0.16;
+      --v-dragged-opacity: 0.08;
+      --v-theme-kbd: 33, 37, 41;
+      --v-theme-on-kbd: 255, 255, 255;
+      --v-theme-code: 52, 52, 52;
+      --v-theme-on-code: 204, 204, 204;
+    }
+    .bg-background {
+      --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+      background-color: rgb(var(--v-theme-background)) !important;
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .bg-surface {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface)) !important;
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .bg-surface-bright {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-bright)) !important;
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .bg-surface-light {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-light-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-light)) !important;
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .bg-surface-variant {
+      --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+      background-color: rgb(var(--v-theme-surface-variant)) !important;
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .bg-primary {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary)) !important;
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .bg-primary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .bg-secondary {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary)) !important;
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .bg-secondary-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .bg-error {
+      --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+      background-color: rgb(var(--v-theme-error)) !important;
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .bg-info {
+      --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+      background-color: rgb(var(--v-theme-info)) !important;
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .bg-success {
+      --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+      background-color: rgb(var(--v-theme-success)) !important;
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .bg-warning {
+      --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+      background-color: rgb(var(--v-theme-warning)) !important;
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .bg-accent {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent)) !important;
+      color: rgb(var(--v-theme-on-accent)) !important;
+    }
+    .bg-greyblue {
+      --v-theme-overlay-multiplier: var(--v-theme-greyblue-overlay-multiplier);
+      background-color: rgb(var(--v-theme-greyblue)) !important;
+      color: rgb(var(--v-theme-on-greyblue)) !important;
+    }
+    .bg-secondary-lighten-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-lighten-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-lighten-1)) !important;
+      color: rgb(var(--v-theme-on-secondary-lighten-1)) !important;
+    }
+    .bg-secondary-lighten-2 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-lighten-2-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-lighten-2)) !important;
+      color: rgb(var(--v-theme-on-secondary-lighten-2)) !important;
+    }
+    .bg-secondary-lighten-3 {
+      --v-theme-overlay-multiplier: var(--v-theme-secondary-lighten-3-overlay-multiplier);
+      background-color: rgb(var(--v-theme-secondary-lighten-3)) !important;
+      color: rgb(var(--v-theme-on-secondary-lighten-3)) !important;
+    }
+    .bg-accent-lighten-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-lighten-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent-lighten-1)) !important;
+      color: rgb(var(--v-theme-on-accent-lighten-1)) !important;
+    }
+    .bg-accent-lighten-2 {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-lighten-2-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent-lighten-2)) !important;
+      color: rgb(var(--v-theme-on-accent-lighten-2)) !important;
+    }
+    .bg-accent-lighten-3 {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-lighten-3-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent-lighten-3)) !important;
+      color: rgb(var(--v-theme-on-accent-lighten-3)) !important;
+    }
+    .bg-accent-darken-1 {
+      --v-theme-overlay-multiplier: var(--v-theme-accent-darken-1-overlay-multiplier);
+      background-color: rgb(var(--v-theme-accent-darken-1)) !important;
+      color: rgb(var(--v-theme-on-accent-darken-1)) !important;
+    }
+    .text-background {
+      color: rgb(var(--v-theme-background)) !important;
+    }
+    .border-background {
+      --v-border-color: var(--v-theme-background);
+    }
+    .text-surface {
+      color: rgb(var(--v-theme-surface)) !important;
+    }
+    .border-surface {
+      --v-border-color: var(--v-theme-surface);
+    }
+    .text-surface-bright {
+      color: rgb(var(--v-theme-surface-bright)) !important;
+    }
+    .border-surface-bright {
+      --v-border-color: var(--v-theme-surface-bright);
+    }
+    .text-surface-light {
+      color: rgb(var(--v-theme-surface-light)) !important;
+    }
+    .border-surface-light {
+      --v-border-color: var(--v-theme-surface-light);
+    }
+    .text-surface-variant {
+      color: rgb(var(--v-theme-surface-variant)) !important;
+    }
+    .border-surface-variant {
+      --v-border-color: var(--v-theme-surface-variant);
+    }
+    .on-surface-variant {
+      color: rgb(var(--v-theme-on-surface-variant)) !important;
+    }
+    .text-primary {
+      color: rgb(var(--v-theme-primary)) !important;
+    }
+    .border-primary {
+      --v-border-color: var(--v-theme-primary);
+    }
+    .text-primary-darken-1 {
+      color: rgb(var(--v-theme-primary-darken-1)) !important;
+    }
+    .border-primary-darken-1 {
+      --v-border-color: var(--v-theme-primary-darken-1);
+    }
+    .text-secondary {
+      color: rgb(var(--v-theme-secondary)) !important;
+    }
+    .border-secondary {
+      --v-border-color: var(--v-theme-secondary);
+    }
+    .text-secondary-darken-1 {
+      color: rgb(var(--v-theme-secondary-darken-1)) !important;
+    }
+    .border-secondary-darken-1 {
+      --v-border-color: var(--v-theme-secondary-darken-1);
+    }
+    .text-error {
+      color: rgb(var(--v-theme-error)) !important;
+    }
+    .border-error {
+      --v-border-color: var(--v-theme-error);
+    }
+    .text-info {
+      color: rgb(var(--v-theme-info)) !important;
+    }
+    .border-info {
+      --v-border-color: var(--v-theme-info);
+    }
+    .text-success {
+      color: rgb(var(--v-theme-success)) !important;
+    }
+    .border-success {
+      --v-border-color: var(--v-theme-success);
+    }
+    .text-warning {
+      color: rgb(var(--v-theme-warning)) !important;
+    }
+    .border-warning {
+      --v-border-color: var(--v-theme-warning);
+    }
+    .text-accent {
+      color: rgb(var(--v-theme-accent)) !important;
+    }
+    .border-accent {
+      --v-border-color: var(--v-theme-accent);
+    }
+    .text-greyblue {
+      color: rgb(var(--v-theme-greyblue)) !important;
+    }
+    .border-greyblue {
+      --v-border-color: var(--v-theme-greyblue);
+    }
+    .text-secondary-lighten-1 {
+      color: rgb(var(--v-theme-secondary-lighten-1)) !important;
+    }
+    .border-secondary-lighten-1 {
+      --v-border-color: var(--v-theme-secondary-lighten-1);
+    }
+    .text-secondary-lighten-2 {
+      color: rgb(var(--v-theme-secondary-lighten-2)) !important;
+    }
+    .border-secondary-lighten-2 {
+      --v-border-color: var(--v-theme-secondary-lighten-2);
+    }
+    .text-secondary-lighten-3 {
+      color: rgb(var(--v-theme-secondary-lighten-3)) !important;
+    }
+    .border-secondary-lighten-3 {
+      --v-border-color: var(--v-theme-secondary-lighten-3);
+    }
+    .text-accent-lighten-1 {
+      color: rgb(var(--v-theme-accent-lighten-1)) !important;
+    }
+    .border-accent-lighten-1 {
+      --v-border-color: var(--v-theme-accent-lighten-1);
+    }
+    .text-accent-lighten-2 {
+      color: rgb(var(--v-theme-accent-lighten-2)) !important;
+    }
+    .border-accent-lighten-2 {
+      --v-border-color: var(--v-theme-accent-lighten-2);
+    }
+    .text-accent-lighten-3 {
+      color: rgb(var(--v-theme-accent-lighten-3)) !important;
+    }
+    .border-accent-lighten-3 {
+      --v-border-color: var(--v-theme-accent-lighten-3);
+    }
+    .text-accent-darken-1 {
+      color: rgb(var(--v-theme-accent-darken-1)) !important;
+    }
+    .border-accent-darken-1 {
+      --v-border-color: var(--v-theme-accent-darken-1);
+    }
+    .on-background {
+      color: rgb(var(--v-theme-on-background)) !important;
+    }
+    .on-surface {
+      color: rgb(var(--v-theme-on-surface)) !important;
+    }
+    .on-surface-bright {
+      color: rgb(var(--v-theme-on-surface-bright)) !important;
+    }
+    .on-surface-light {
+      color: rgb(var(--v-theme-on-surface-light)) !important;
+    }
+    .on-primary {
+      color: rgb(var(--v-theme-on-primary)) !important;
+    }
+    .on-primary-darken-1 {
+      color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+    }
+    .on-secondary {
+      color: rgb(var(--v-theme-on-secondary)) !important;
+    }
+    .on-secondary-darken-1 {
+      color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+    }
+    .on-error {
+      color: rgb(var(--v-theme-on-error)) !important;
+    }
+    .on-info {
+      color: rgb(var(--v-theme-on-info)) !important;
+    }
+    .on-success {
+      color: rgb(var(--v-theme-on-success)) !important;
+    }
+    .on-warning {
+      color: rgb(var(--v-theme-on-warning)) !important;
+    }
+    .on-accent {
+      color: rgb(var(--v-theme-on-accent)) !important;
+    }
+    .on-greyblue {
+      color: rgb(var(--v-theme-on-greyblue)) !important;
+    }
+    .on-secondary-lighten-1 {
+      color: rgb(var(--v-theme-on-secondary-lighten-1)) !important;
+    }
+    .on-secondary-lighten-2 {
+      color: rgb(var(--v-theme-on-secondary-lighten-2)) !important;
+    }
+    .on-secondary-lighten-3 {
+      color: rgb(var(--v-theme-on-secondary-lighten-3)) !important;
+    }
+    .on-accent-lighten-1 {
+      color: rgb(var(--v-theme-on-accent-lighten-1)) !important;
+    }
+    .on-accent-lighten-2 {
+      color: rgb(var(--v-theme-on-accent-lighten-2)) !important;
+    }
+    .on-accent-lighten-3 {
+      color: rgb(var(--v-theme-on-accent-lighten-3)) !important;
+    }
+    .on-accent-darken-1 {
+      color: rgb(var(--v-theme-on-accent-darken-1)) !important;
+    }
+</style></head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr" style=""><div class="v-application__wrap"><!--[--><div style="background-color:rgba(56, 84, 166, 0.20);" data-v-5964d52a=""><div class="v-container v-locale--is-ltr my-0" style="" data-v-5964d52a=""><header class="nav-header bg-white px-4 py-2 py-md-4" data-v-5964d52a=""><div class="v-row v-row--no-gutters" style="" data-v-5964d52a=""><div class="v-col v-col-auto" style="" data-v-5964d52a=""><div class="logo-ghost" data-v-5964d52a=""><a href="/" class="" data-v-5964d52a=""><img src="/assets/logo-K9N6kcVS.svg" alt="Logo RMO, plomberie et chauffage" class="logo" data-v-5964d52a=""></a></div></div><!--[--><div class="v-spacer" style="" data-v-5964d52a=""></div><div class="v-col v-col-auto" style="" data-v-5964d52a=""><button type="button" class="v-btn v-btn--icon v-theme--light text-primary v-btn--density-default rounded-lg v-btn--size-default v-btn--variant-text" style="" data-v-5964d52a=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><i class="mdi-menu mdi v-icon notranslate v-theme--light v-icon--size-default" style="" aria-hidden="true"></i></span><!----><!----></button></div><!--]--></div><div class="mobile-menu" data-v-5964d52a=""><!----></div></header></div></div><div class="service-page" data-v-cc2f249b=""><div class="top-screen" data-v-cc2f249b=""><div class="v-container v-locale--is-ltr pb-0" style="" data-v-cc2f249b=""><div class="v-row v-row--no-gutters align-end" style="" data-v-cc2f249b=""><div class="v-col-md-6 v-col-12 left-side text-center text-md-left" style="" data-v-cc2f249b=""><h1 class="text-primary" data-v-cc2f249b="">Pompe à chaleur</h1><p class="mt-6" data-v-cc2f249b="">Vous faire profiter de toutes les aides gouvernementales et vous guider dans l'équipement d'une pompe à chaleur adaptée à votre logement.</p><a class="v-btn v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-large v-btn--variant-flat mt-8" style="" href="/contact" data-v-cc2f249b=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><!--[--><!--[-->Nous contacter<!--]--><!--]--></span><!----><!----></a></div><div class="v-col-md-6 v-col-12" style="" data-v-cc2f249b=""><img src="/assets/avatar-MAunkzkc.svg" alt="Avatar RMO" class="avatar mb-n2" data-v-cc2f249b=""></div></div></div></div><article data-v-cc2f249b=""><div class="v-container v-locale--is-ltr" style="" data-v-cc2f249b=""><div class="v-row align-center" style=""><div class="v-col v-col-12" style=""><p> La pompe à chaleur (PAC) est un système qui permet de transformer de l’énergie (les calories) extraite d’une ressource naturelle comme l’air, l’eau ou le sol, et de la transférer d’un milieu à basse température vers un milieu à haute température. Il s’agit donc d’un <strong>chauffage écologique</strong> puisqu’il est produit à base d’une source renouvelable, et qu’il consomme beaucoup moins d’énergie que les autres systèmes. Aujourd’hui, la plupart des modèles sont réversibles et peuvent produire du froid. Dans cet article, nous allons voir quels sont les différents systèmes de PAC ? Comment les installer ? Comment les financer ? </p></div><div class="v-col v-col-12" style=""><h3>Quelles sont les différentes pompes à chaleur ?</h3><p> Les pompes à chaleur permettent de chauffer soit l’air, soit l’eau, ou bien être raccordés aux deux systèmes. Elles se différencient en fonction de la source d’extraction de l’énergie. Aussi, on distingue : </p><ul><li>Les PAC aérothermiques</li><li>Les PAC hydrothermiques</li><li>Les PAC géothermiques</li></ul><p></p></div></div><div class="v-row align-center" style=""><div class="v-col-md-6 v-col-12" style=""><img src="/assets/PAC-aerothermique-GDEOUy3F.jpeg"></div><div class="v-col-md-6 v-col-12" style=""><h3>Les pompes à chaleur aérothermiques</h3><p> Ce sont des PAC qui extraient l’énergie dans l’air. Les calories sont captées grâce à un évaporateur puis envoyées dans un compresseur et un condensateur avant d’être diffusées. On l’utilise pour le chauffage de l’air. C’est ce que l’on appelle les <strong>PAC AIR-AIR</strong>. Mais il existe également des <strong>PAC AIR-EAU</strong> qui permettent de <strong>chauffer l’eau sanitaire</strong> et <strong>d’alimenter un chauffage au sol</strong>. Ce sont les plus intéressantes d’un point de vue financier, car selon les modèles, ces pompes à chaleur coutent jusqu’à 60 % moins cher à la pose que les autres systèmes. Il est nécessaire de faire appel à un professionnel qui évaluera les besoins en matière de chauffage selon la taille et la disposition de votre logement. En revanche, en matière de puissance, elles offrent un coefficient de performance de 3 kWh (contre 5 kWh pour une PAC aérothermique). Les <strong>climatisations réversibles AIR-AIR</strong> sont beaucoup moins performantes que les pompes à chaleur hydrothermiques et géothermiques. </p></div></div><div class="v-row align-center" style=""><div class="v-col v-col-12" style=""><h3>Les pompes à chaleur hydrothermiques</h3><p> Aussi appelées <strong>les pompes EAU-EAU</strong>, les PAC hydrothermiques puisent de l’énergie grâce à l’eau. Elles sont plus puissantes que les pompes à chaleur AIR-AIR ou AIR-EAU, car elles développent, tout comme la géothermie, un coefficient de performance de 5 kWh. Elles sont destinées à alimenter un <strong>réseau d’eau sanitaire</strong> et de <strong>chauffage à eau</strong>. Elles peuvent également être réversibles si l’on dispose d’un système de chauffage au sol. Ce système est intéressant pour les propriétaires de maisons situées au bord d’une rivière, ainsi que ceux qui ont un lac sur leur terrain (le lac doit être assez grand, car le point de puisage et le point de rejet devront être séparés d’au moins 10 mètres). Si ce n’est pas le cas, il est possible de rechercher s’il existe une nappe phréatique dans le sol en faisant venir un expert puis de faire appel à une entreprise qui procèdera à un forage. Bien que la profondeur du forage soit moins importante que pour une installation géothermique, ce procédé nécessite de remplir des <strong>formalités administratives</strong>. Il faut commencer par savoir si la nappe peut être exploitée, notamment au niveau de son débit. Pour cela, il faut faire appel à un Bureau de Recherches Géologiques et Minières (BRGM) à un hydrogéologue agréé ou encore à un bureau d’études spécialisé. Les travaux doivent être réalisés par un professionnel déclaré à la <strong>direction régionale de l’environnement, de l’aménagement et du logement</strong> (DREAL). Au niveau des déclarations, il est obligatoire d’effectuer une déclaration préalable à la mairie et à la DREAL. </p></div></div><div class="v-row align-center" style=""><div class="v-col-md-6 v-col-12" style=""><img src="/assets/pompe-chaleur1-3Cak6I50.jpg"></div><div class="v-col-md-6 v-col-12" style=""><h3>La pompe à chaleur géothermique</h3><p> Dans ce cas de figure, l’énergie est puisée dans le sol. Pour cela, les professionnels ou les bureaux d’études vous proposeront deux solutions. Soit, on procède à l’installation d’un <strong>système de pompage horizontal</strong> c’est-à-dire à faible profondeur sur une très grande surface. Cela n’est possible que si les propriétaires disposent d’un grand terrain (deux fois la surface de la maison). Soit, on installe un <strong>système de pompage vertical</strong>, lorsque le terrain est trop petit ou qu’il ne permet pas d’avoir recours au captage vertical. Dans ce cas, il faut procéder à un forage. Tout comme le forage pour la PAC hydrothermique, cette méthode nécessite des autorisations administratives et notamment des déclarations auprès de la mairie ou de la DREAL. Il est également indispensable de faire appel à une entreprise agréée par l’ADEME. Les PAC Géothermiques sont aussi performantes que les PAC aérothermiques et ce sont les moins bruyantes du marché. De plus, la climatisation est de bien meilleure qualité. </p></div></div></div></article><section class="interventions" data-v-cc2f249b=""><div class="v-container v-locale--is-ltr" style="" data-v-cc2f249b=""><h2 class="text-center" data-v-cc2f249b="">Nos interventions en 4 mots</h2><div class="v-row mt-12" style="" data-v-cc2f249b=""><div class="v-col-md-3 v-col-12" style="" data-v-cc2f249b=""><div class="horizontal-color-card text-white pa-10 bg-secondary-lighten-3 fill-height" data-v-cc2f249b="" style="--46a341ec:30px;--01ef447c:#3854A6;" data-v-974ffc32=""><div class="v-row align-center" style="" data-v-974ffc32=""><div class="v-col caption" style="" data-v-974ffc32=""><!--[-->Nos engagements<!--]--></div><div class="v-col v-col-auto" style="" data-v-974ffc32=""><div class="icon" data-v-974ffc32=""><div class="img" data-v-974ffc32=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 14 14"><path fill="currentColor" fill-rule="evenodd" d="m4.938 2.04l-.116.359c-.35.57-.724 1.215-1.07 1.887c-.464.899-.923 1.928-1.186 2.937c-.524-1.967-.483-4.525-.404-5.958A1.347 1.347 0 0 1 3.337.014a1.415 1.415 0 0 1 1.6 1.228zm5.177 7.942c.183-.042.36-.126.515-.253c.544-.443.586-1.452.143-1.996A3.806 3.806 0 0 0 7.67 6.33a4.3 4.3 0 0 0-.427.068a2.82 2.82 0 0 0-.68.222a.625.625 0 1 1-.596-1.1c.265-.143.638-.264 1.015-.345c.381-.08.82-.131 1.228-.102l.977-2.03a1.415 1.415 0 0 0-.752-1.872a1.347 1.347 0 0 0-1.649.479c-.99 1.482-3.078 4.752-3.191 6.965a53.255 53.255 0 0 0-.025 4.918a.489.489 0 0 0 .492.466H8.81a.882.882 0 0 0 .286-.045a3.783 3.783 0 0 0 1.17-.651a3.8 3.8 0 0 0 1.16-1.61a1.27 1.27 0 0 0-1.31-1.712Zm-3.137 1.137a1.27 1.27 0 0 1 1.97-1.605c.279.342.7.501 1.108.462a1.27 1.27 0 0 0-.904.79a1.27 1.27 0 0 1-2.173.352Z" clip-rule="evenodd"></path></svg></div></div></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-10 card-main" style="" data-v-974ffc32=""><!--[-->Simple<!--]--></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-12 card-subtitle" style="" data-v-974ffc32=""><!--[--> Identification de votre situation et de vos besoins par notre service clients par simple appel <!--]--></div></div></div></div><div class="v-col-md-3 v-col-12" style="" data-v-cc2f249b=""><div class="horizontal-color-card text-white pa-10 bg-accent fill-height" data-v-cc2f249b="" style="--46a341ec:30px;--01ef447c:#D96B43;" data-v-974ffc32=""><div class="v-row align-center" style="" data-v-974ffc32=""><div class="v-col caption" style="" data-v-974ffc32=""><!--[-->Nos engagements<!--]--></div><div class="v-col v-col-auto" style="" data-v-974ffc32=""><div class="icon" data-v-974ffc32=""><div class="img" data-v-974ffc32=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m3.5 6A1.5 1.5 0 0 1 17 9.5a1.5 1.5 0 0 1-1.5 1.5A1.5 1.5 0 0 1 14 9.5A1.5 1.5 0 0 1 15.5 8m-7 0A1.5 1.5 0 0 1 10 9.5A1.5 1.5 0 0 1 8.5 11A1.5 1.5 0 0 1 7 9.5A1.5 1.5 0 0 1 8.5 8m3.5 9.5c-2.33 0-4.31-1.46-5.11-3.5h10.22c-.81 2.04-2.78 3.5-5.11 3.5"></path></svg></div></div></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-10 card-main" style="" data-v-974ffc32=""><!--[-->Rapide<!--]--></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-12 card-subtitle" style="" data-v-974ffc32=""><!--[--> Prise de rendez-vous pour une intervention 24/7 <!--]--></div></div></div></div><div class="v-col-md-3 v-col-12" style="" data-v-cc2f249b=""><div class="horizontal-color-card text-white pa-10 bg-greyblue fill-height" data-v-cc2f249b="" style="--46a341ec:30px;--01ef447c:#7B92A6;" data-v-974ffc32=""><div class="v-row align-center" style="" data-v-974ffc32=""><div class="v-col caption" style="" data-v-974ffc32=""><!--[-->Nos engagements<!--]--></div><div class="v-col v-col-auto" style="" data-v-974ffc32=""><div class="icon" data-v-974ffc32=""><div class="img" data-v-974ffc32=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 48 48"><defs><mask id="ipSCheckOne0"><g fill="none" stroke-linejoin="round" stroke-width="4"><path fill="#fff" stroke="#fff" d="M24 44a19.937 19.937 0 0 0 14.142-5.858A19.937 19.937 0 0 0 44 24a19.938 19.938 0 0 0-5.858-14.142A19.937 19.937 0 0 0 24 4A19.938 19.938 0 0 0 9.858 9.858A19.938 19.938 0 0 0 4 24a19.937 19.937 0 0 0 5.858 14.142A19.938 19.938 0 0 0 24 44Z"></path><path stroke="#000" stroke-linecap="round" d="m16 24l6 6l12-12"></path></g></mask></defs><path fill="currentColor" d="M0 0h48v48H0z" mask="url(#ipSCheckOne0)"></path></svg></div></div></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-10 card-main" style="" data-v-974ffc32=""><!--[-->Efficace<!--]--></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-12 card-subtitle" style="" data-v-974ffc32=""><!--[--> Résultat garanti <!--]--></div></div></div></div><div class="v-col-md-3 v-col-12" style="" data-v-cc2f249b=""><div class="horizontal-color-card text-white pa-10 bg-primary fill-height" data-v-cc2f249b="" style="--46a341ec:30px;--01ef447c:#24244D;" data-v-974ffc32=""><div class="v-row align-center" style="" data-v-974ffc32=""><div class="v-col caption" style="" data-v-974ffc32=""><!--[-->Nos engagements<!--]--></div><div class="v-col v-col-auto" style="" data-v-974ffc32=""><div class="icon" data-v-974ffc32=""><div class="img" data-v-974ffc32=""><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M12 6V5l-1.875 1.875q-.025.025-.4.125q-.25 0-.387-.213t-.013-.437L10 5V4q-.425 0-.712-.288T9 3q0-.425.288-.712T10 2h5q.425 0 .713.288T16 3v.775q0 .125-.025.213T15.9 4.2L15 6zm-2 16q-.825 0-1.412-.587T8 20v-4.925q0-.25.05-.487t.175-.463l3.2-6.05q.275-.5.738-.788T13.2 7H15q.425 0 .713.288T16 8v12q0 .825-.587 1.413T14 22z"></path></svg></div></div></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-10 card-main" style="" data-v-974ffc32=""><!--[-->Propre<!--]--></div></div><div class="v-row" style="" data-v-974ffc32=""><div class="v-col v-col-12 card-subtitle" style="" data-v-974ffc32=""><!--[--> Nous nettoyons et rangeons après notre passage <!--]--></div></div></div></div></div><div class="v-row justify-center" style="" data-v-cc2f249b=""><div class="v-col v-col-auto" style="" data-v-cc2f249b=""><a class="v-btn v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-large v-btn--variant-flat mt-8" style="" href="/contact" data-v-cc2f249b=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><!--[--><!--[-->Nous contacter<!--]--><!--]--></span><!----><!----></a></div></div></div></section><section class="bg-white mb-12" data-v-cc2f249b=""><div class="v-container v-locale--is-ltr" style="" data-v-cc2f249b=""><h2 class="text-center text-primary" data-v-cc2f249b="">En quoi pouvons-nous vous aider ?</h2></div><div class="v-row justify-center services-list mt-8 mx-0" style="" data-v-cc2f249b="" data-v-e69a53c5=""><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a href="/service/fuites-d-eau" class="service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/fuite-eau-WnJQO5kn.jpg" alt="Illustration Fuite d'eau" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Fuite d'eau</div></div></a></div><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a href="/service/entretien-chaudiere" class="service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/entretien-chaudiere-wdnhRkiY.jpg" alt="Illustration Entretien Chaudière" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Entretien Chaudière</div></div></a></div><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a href="/service/assainissement" class="service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/assainissement-r9dFdS1G.jpg" alt="Illustration Assainissement" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Assainissement</div></div></a></div><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a href="/service/installation-chauffage" class="service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/installation-chauffage-ia9ykxuh.jpg" alt="Illustration Installation Chauffage" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Installation Chauffage</div></div></a></div><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a href="/service/chauffe-eau" class="service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/chauffe-eau-kcSI4QCe.jpg" alt="Illustration Chauffe-eau" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Chauffe-eau</div></div></a></div><div class="v-col-md-auto v-col-12" style="" data-v-e69a53c5=""><a aria-current="page" href="/service/pompe-a-chaleur" class="router-link-active router-link-exact-active service-card" data-v-e69a53c5="" data-v-aa23f847=""><div class="d-flex flex-column" data-v-aa23f847=""><div class="service-card--img" data-v-aa23f847=""><img src="/assets/installation-chauffage-ia9ykxuh.jpg" alt="Illustration Pompe à chaleur" data-v-aa23f847=""></div><div class="flex-grow-0 text-center text-secondary service-card--title py-4" data-v-aa23f847="">Pompe à chaleur</div></div></a></div></div><div class="v-container v-container--fluid v-locale--is-ltr" style="" data-v-cc2f249b=""><div class="v-row justify-center" style="" data-v-cc2f249b=""><div class="v-col v-col-auto" style="" data-v-cc2f249b=""><a class="v-btn v-theme--light bg-primary v-btn--density-default rounded-lg v-btn--size-large v-btn--variant-flat mt-8" style="" href="/services" data-v-cc2f249b=""><!--[--><span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!--]--><!----><span class="v-btn__content" data-no-activator=""><!--[--><!--[-->Voir nos services<!--]--><!--]--></span><!----><!----></a></div></div></div></section></div><div class="v-container v-locale--is-ltr bottom-screen-bar py-0" style="" data-v-8f97c921=""><a href="/contact" class="bottom-screen-bar--inner pa-2 bg-accent text-white text-center" data-v-8f97c921=""><span data-v-8f97c921="">Besoin d'un plombier ?</span><i class="mdi-arrow-up-thin-circle-outline mdi v-icon notranslate v-theme--light v-icon--size-default icon" style="" aria-hidden="true" data-v-8f97c921=""></i></a></div><footer class="app-footer bg-primary py-12 mobile" data-v-2c7b54f6=""><div class="v-container v-locale--is-ltr" style="" data-v-2c7b54f6=""><div class="v-row align-center justify-center" style="" data-v-2c7b54f6=""><div class="v-col-md-auto v-col-12 text-center" style="" data-v-2c7b54f6=""><img src="/assets/logo-v-ItkQdlHM.svg" alt="Logo vertical RMO" height="100" data-v-2c7b54f6=""></div><div class="v-col-md-auto v-col-12 text-center" style="" data-v-2c7b54f6=""> 2024 RMO. Tous droits réservés. </div><div class="v-col-md-auto v-col-12 text-center" style="" data-v-2c7b54f6=""> design par <a href="https://mi-so.fr/" target="_blank" data-v-2c7b54f6="">mi-so.fr</a></div><div class="v-col-md-auto v-col-12 text-center" style="" data-v-2c7b54f6=""> développé par <a href="https://www.linkedin.com/in/victor-castro-cintas/" target="_blank" data-v-2c7b54f6="">Webelier</a></div><div class="v-col-md-auto v-col-12 text-center" style="" data-v-2c7b54f6=""><div class="v-row v-row--dense justify-center" style="" data-v-2c7b54f6=""><div class="v-col v-col-auto" style=""><a href="#" target="_blank"><i class="mdi-facebook mdi v-icon notranslate v-theme--light v-icon--size-default text-white" style="" aria-hidden="true"></i></a></div><div class="v-col v-col-auto" style=""><a href="#" target="_blank"><i class="mdi-instagram mdi v-icon notranslate v-theme--light v-icon--size-default text-white" style="" aria-hidden="true"></i></a></div><div class="v-col v-col-auto" style=""><a href="#" target="_blank"><i class="mdi-linkedin mdi v-icon notranslate v-theme--light v-icon--size-default text-white" style="" aria-hidden="true"></i></a></div><div class="v-col v-col-auto" style=""><a href="#" target="_blank"><i class="mdi-youtube mdi v-icon notranslate v-theme--light v-icon--size-default text-white" style="" aria-hidden="true"></i></a></div></div></div></div></div></footer><!--]--></div></div></div>
+  
+
+</body></html>
